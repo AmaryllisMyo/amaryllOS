@@ -1,0 +1,11 @@
+.titlebar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  padding: var(--space-1) var(--space-2);
+  background: var(--titlebar-bg-gradien);
+  color: var(--titlebar-text);
+  font-family: var(--font-pixel);
+  font-size: var(--fs-window-title);
+}

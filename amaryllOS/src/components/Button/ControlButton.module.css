@@ -1,0 +1,41 @@
+.controlBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 22px;
+  padding: 0;
+  border: none;
+  color: var(--text-primary);
+  background: var(--button-face);
+  box-shadow: var(--border-raised-outer), var(--border-raised-inner);
+  cursor: pointer;
+  font: inherit;
+}
+ 
+.controlBtn:active {
+  box-shadow: var(--border-sunken-outer), var(--border-sunken-inner);
+}
+
+.controlBtn:disabled {
+  cursor: default;
+}
+
+.controlBtn:disabled:active {
+  box-shadow: var(--border-raised-outer), var(--border-raised-inner);
+}
+ 
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+}
+ 
+.icon svg {
+  width: 8px;
+  height: 8px;
+  display: block;
+  fill: currentColor;
+}
+ 

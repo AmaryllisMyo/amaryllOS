@@ -1,0 +1,4 @@
+{
+  "nav": { "home": "About Me", "about": "Resume", "projects": "Projects", "doodle": "Leave me a doodle!" },
+  "hero": { "title": "Welcome" }
+}
