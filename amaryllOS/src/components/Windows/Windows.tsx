@@ -1,6 +1,6 @@
 import type { ComponentType, ReactNode } from "react";
 import styles from "./Windows.module.css";
-import { ControlButton } from "../Button/ControlButton";
+import { ControlButton } from "../ControlButton/ControlButton";
 import type { IconProps } from "../../assets/icons/types";
 import CloseDeactivated from "../../assets/icons/CloseDeactivated.svg?react"
 import MinimizeDeactivated from "../../assets/icons/MinimizeDeactivated.svg?react"

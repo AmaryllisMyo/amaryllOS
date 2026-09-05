@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { MDXProvider } from "@mdx-js/react";
 import { loadSection } from "./loadSection";
+import styles from "./AboutMe.module.css"
 
 const mdxComponents = {
     h2: (props: any) => <h2 className="section-title" {...props}/>,
@@ -30,7 +31,7 @@ export function AboutMe() {
     if(!Content) return <div className="section-skeleton" />;
 
     return(
-        <section className="about-me">
+        <section className={styles.root}>
             <MDXProvider components={mdxComponents} >
                 <Content />
             </MDXProvider>

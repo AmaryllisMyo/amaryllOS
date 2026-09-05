@@ -1,10 +1,13 @@
 import './App.css'
+import { Layout } from './components/Layout/Layout'
 import { LandingPage } from './components/LandingPage'
 
 function App() {
 
   return (
-        <LandingPage/>
+    <Layout>
+      <LandingPage/>
+    </Layout>
   )
 }
 

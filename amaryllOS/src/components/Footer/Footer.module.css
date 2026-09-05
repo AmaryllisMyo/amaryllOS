@@ -1,4 +1,4 @@
-.titlebar {
+.footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -8,12 +8,9 @@
   color: var(--titlebar-text);
   font-family: var(--font-pixel);
   font-size: var(--fs-window-title);
-  position: fixed;
-  top: 0;
+  position: absolute;
   left: 0;
   right: 0;
-}
-
-.controls {
-  display: flex;
+  bottom: 0;
+  height: 25px;
 }

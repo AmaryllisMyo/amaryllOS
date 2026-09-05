@@ -4,11 +4,13 @@ import { AboutMe } from "../sections/AboutMe";
 
 export function LandingPage() {
     return (
-      <div className={styles.windowSmall}>
-        <Window 
-        title='About_Me.txt' 
-        children={<AboutMe/>}
-        />
+      <div className={styles.rowDiv}>
+        <Window title='About_Me.txt' className={styles.windowSmall}> 
+          {<AboutMe />}
+        </Window>
+        <Window title='About_Me.txt' className={styles.windowSmall}> 
+          {<AboutMe />}
+        </Window>
       </div>
     );
 }
