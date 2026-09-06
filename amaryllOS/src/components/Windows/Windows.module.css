@@ -28,6 +28,7 @@
   font-size: var(--fs-window-title);
   user-select: none;
   margin: 2px;
+  font-weight: bold;
 }
 
 .controls {

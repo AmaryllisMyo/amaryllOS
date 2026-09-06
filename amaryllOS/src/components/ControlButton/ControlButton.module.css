@@ -24,18 +24,11 @@
 .controlBtn:disabled:active {
   box-shadow: var(--border-raised-outer), var(--border-raised-inner);
 }
+
  
-.icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 0;
-}
- 
-.icon svg {
-  width: 8px;
-  height: 8px;
+.iconSvg {
+  width: 13px;
+  height: 13px;
   display: block;
-  fill: currentColor;
 }
  

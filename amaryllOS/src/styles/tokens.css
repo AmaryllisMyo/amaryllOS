@@ -27,11 +27,15 @@
   --disabled-bg: var(--color-pink-100);
   --disabled-text: #C99BB4;
 
+  --bg-page-image: url("../assets/images/CloudsBG.png");
+
   --font-pixel: "Pixelify Sans", monospace;
   --font-body: "Pixelify Sans", monospace;
-  --fs-window-title: 0.85rem;
-  --fs-heading: 1.5rem;
-  --fs-body: 0.95rem;
+  --fs-window-title: 1.1rem;
+  --fs-heading: 2rem;
+  --fs-heading-2: 1.75rem;
+  --fs-btns: 1.25rem;
+  --fs-body: 1rem;
   --fs-small: 0.75rem;
 
   --space-1: 4px;
@@ -40,6 +44,7 @@
   --space-4: 16px;
   --space-5: 24px;
   --space-6: 32px;
+  --space-8: 64px;
   --shadow-pixel: 4px 4px 0 var(--color-plum-900);
   --shadow-pixel-sm: 2px 2px 0 var(--color-plum-900);
   --border-width: 2px;
@@ -77,8 +82,13 @@
 }
 
 body {
-  background: var(--bg-page);
+  background-color: var(--bg-page);
+  background-image: var(--bg-page-image);
   color: var(--text-primary);
   font-family: var(--font-body);
   font-size: var(--fs-body);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 }
