@@ -4,9 +4,12 @@ import i18n from './i18n.ts'
 import './index.css'
 import './styles/tokens.css'
 import App from './App.tsx'
+import { LocaleProvider } from './locales/LocaleContext.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+    <LocaleProvider>
+      <App />
+    </LocaleProvider>
   </StrictMode>,
 )

@@ -12,8 +12,14 @@
   top: 0;
   left: 0;
   right: 0;
+  line-height: 0;
 }
 
 .controls {
   display: flex;
+}
+
+.buttons {
+  display: flex;
+  gap: var(--space-4);
 }

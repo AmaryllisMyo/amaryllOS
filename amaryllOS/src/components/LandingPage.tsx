@@ -1,9 +1,9 @@
 import { Window } from "./Windows/Windows";
 import styles from "./LandingPage.module.css"
 import { AboutMe } from "../sections/AboutMe";
-import PlaceholderContent from "../assets/placeholder/PlaceholderContent.png"
 import { ControlButton } from "./ControlButton/ControlButton";
 import BunnyIcon from "../assets/placeholder/BunnyIcon.png"
+import { Minigame } from "./Minigame/Minigame";
 
 export function LandingPage() {
   return (
@@ -11,7 +11,7 @@ export function LandingPage() {
     <div className={styles.rowDiv}>
       <div className={styles.columnDiv}>
         <Window title='Amaryllis.exe' className={styles.windowSmall}>
-          <img src={PlaceholderContent} alt="Placeholder" className={styles.imgPlaceholder} />
+          <Minigame/>
         </Window>
         
         <div className={styles.buttonRow}>
