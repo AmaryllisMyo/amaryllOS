@@ -85,5 +85,19 @@
 
 @keyframes bunnyBounce {
     0%, 100% { transform: translateY(0) rotate(0deg); }
-    50% { transform: translateY(6px) rotate(8deg); }
+    50% { transform: translateY(-6px) rotate(8deg); }
+}
+
+.skills1 {
+    padding: 0 !important;
+    margin: 0 !important; 
+}
+
+.skills2 {
+    text-align: center !important;
+}
+
+.skills3 {
+    text-align: right !important;
+
 }
