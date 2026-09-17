@@ -101,3 +101,8 @@
     text-align: right !important;
 
 }
+
+.projects {
+    height: 400px;
+    overflow-y: auto
+}

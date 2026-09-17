@@ -1,4 +1,4 @@
 {
-  "nav": { "home": "Su di me", "resume": "CV", "projects": "Progetti", "doodle": "Lasciami un disegno!" },
+  "nav": { "home": "Su di me", "skills": "Skills", "projects": "Progetti", "doodle": "Lasciami un disegno!" },
   "hero": { "title": "Welcome" }
 }

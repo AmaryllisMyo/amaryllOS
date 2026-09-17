@@ -9,21 +9,40 @@ export function Navbar() {
 
     const t = useTranslation('common');
 
-    return(
+    return (
         <header className={styles.titlebar}>
             <div className={styles.buttons}>
-                <h4>{t.nav.home}</h4>
-                <h4>{t.nav.resume}</h4>
-                <h4>{t.nav.projects}</h4>
-                <h4>{t.nav.doodle}</h4>
+                <button className={styles.button}>
+                    <a href="#aboutMe" className={styles.link}>
+                        <h4>{t.nav.home}</h4>
+                    </a>
+                </button>
+
+                <button className={styles.button}>
+                    <a href="#skills" className={styles.link}>
+                        <h4>{t.nav.skills}</h4>
+                    </a>
+                </button>
+
+                <button className={styles.button}>
+                    <a href="#projects" className={styles.link}>
+                        <h4>{t.nav.projects}</h4>
+                    </a>
+                </button>
+
+                <button className={styles.button}>
+                    <a className={styles.link} href="#doodleboard">
+                        <h4>{t.nav.doodle}</h4>
+                    </a>
+                </button>
             </div>
 
 
-        <div className={styles.controls}>
-            <ControlButton Icon={MinimizeDeactivated} disabled={true}/>
-            <ControlButton Icon={MaximizeDeactivated} disabled={true}/>
-            <ControlButton Icon={CloseDeactivated} disabled={true}/>
-        </div>
+            <div className={styles.controls}>
+                <ControlButton Icon={MinimizeDeactivated} disabled={true} />
+                <ControlButton Icon={MaximizeDeactivated} disabled={true} />
+                <ControlButton Icon={CloseDeactivated} disabled={true} />
+            </div>
         </header>
     );
 };

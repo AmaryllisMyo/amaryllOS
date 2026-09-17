@@ -21,5 +21,31 @@
 
 .buttons {
   display: flex;
-  gap: var(--space-4);
+  gap: var(--space-6);
+  margin-left: 10px;
 }
+
+.button {
+  background: none;
+  border: none;
+  color: var(--titlebar-text);
+  font: var(--fs-titlebar-text);
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.button:hover{
+  opacity: 0.8;
+}
+
+.button:focus-visible {
+  outline: 2px solid var(--titlebar-text);
+  outline-offset: 2px;
+}
+
+.link {
+    color: var(--titlebar-text);
+    text-decoration: none;
+}
+
