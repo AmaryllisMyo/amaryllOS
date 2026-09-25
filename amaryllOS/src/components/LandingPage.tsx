@@ -8,6 +8,7 @@ import { ExplorerIcon } from "assets/icons/ExplorerIcon/ExplorerIcon";
 import { ProjectItem } from "./ProjectItem/ProjectItem";
 import LittleRepair from "../assets/images/LittleRepair.png"
 import TaskBun from "../assets/images/TaskBun.jpg"
+import { DrawArea } from "./DrawArea/DrawArea";
 
 
 export function LandingPage() {
@@ -61,7 +62,7 @@ export function LandingPage() {
 
       <section id="doodleboard">
         <Window title="AmaOS Paint">
-          aaaaa
+          <DrawArea/>
         </Window>
       </section>
 
