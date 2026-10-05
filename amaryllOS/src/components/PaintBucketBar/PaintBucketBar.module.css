@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: var(--space-2);
+}
+
+.palette {
+    display: flex;
+    flex-direction: column;
+}
+
+.rowHorizontal {
+    display: flex;
+    flex-direction: row;
+}
+
+.button {
+    width: 2.5rem;
+    height: 2.5rem;
+    --control-btn-icon-size: 2rem;
+}
+
+.selectedColor {
+    width: 5rem;
+    height: 5rem;
+    flex-shrink: 0;
+    --control-btn-icon-size: 4.5rem;
+    box-shadow: var(--border-sunken-outer), var(--border-sunken-inner);
+}

@@ -1,7 +1,7 @@
 import { Window } from "./Windows/Windows";
 import styles from "./LandingPage.module.css"
 import { ControlButton } from "./ControlButton/ControlButton";
-import BunnyIcon from "../assets/placeholder/BunnyIcon.png"
+import BunnyIcon from "../assets/icons/BunnyIcon.png"
 import { Minigame } from "./Minigame/Minigame";
 import { SectionLoader } from "../sections/sectionLoaderProps";
 import { ExplorerIcon } from "assets/icons/ExplorerIcon/ExplorerIcon";
@@ -22,9 +22,9 @@ export function LandingPage() {
             </Window>
 
             <div className={styles.buttonRow}>
-              <img src={BunnyIcon} className={`${styles.bunnyIcon} ${styles.bunnyIconFlipped}`} />
-              <ControlButton text="Download my Resume" className={styles.button} />
               <img src={BunnyIcon} className={styles.bunnyIcon} />
+              <ControlButton text="Download my Resume" className={styles.button} href="https://drive.proton.me/urls/40K09V2B6R#RugydElfoNsf" target="_blank" />
+              <img src={BunnyIcon} className={`${styles.bunnyIcon} ${styles.bunnyIconFlipped}`} />
             </div>
 
           </div>
@@ -61,8 +61,8 @@ export function LandingPage() {
       </section>
 
       <section id="doodleboard">
-        <Window title="AmaOS Paint">
-          <DrawArea/>
+        <Window title="AmaOS Paint" className={styles.paint}>
+          <DrawArea />
         </Window>
       </section>
 

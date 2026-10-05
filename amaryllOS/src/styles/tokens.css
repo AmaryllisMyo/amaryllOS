@@ -1,14 +1,35 @@
 :root {
-  --color-pink-50:  #FFDDE7;
+  --color-pink-50: #FFDDE7;
   --color-pink-100: #FFCDDC;
   --color-pink-200: #FFA5E0;
   --color-pink-300: #F277C7;
-  --color-pink-400: #C34296; 
+  --color-pink-400: #C34296;
   --color-plum-900: #3F0A2C;
-  --color-indigo:   #1F26A5;
-  --color-cyan:     #27CAEE;
-  --color-blue:     #1671E9;
+  --color-indigo: #1F26A5;
+  --color-cyan: #27CAEE;
+  --color-blue: #1671E9;
   --color-baby-blue: #E1F8FF;
+
+  --shadow-color: #1671e946;
+
+  --paint-1: #fd9b9b;
+  --paint-2: #facb92;
+  --paint-3: #adf89e;
+  --paint-4: #f9fc9d;
+  --paint-5: #86edf7;
+  --paint-6: #86b3fc;
+  --paint-7: #ae9fff;
+  --paint-8: #ffa3ff;
+  --paint-9: #000000;
+  --paint-10: #002466;
+  --paint-11: #f992ad;
+  --paint-12: #916dd5;
+  --paint-13: #e4cab9;
+  --paint-14: #0077b6;
+  --paint-15: #00b4d8;
+  --paint-16: #74c69d;
+  --paint-17: #a98365;
+  --paint-18: #6a3f24;
 
   --bg-page: var(--color-baby-blue);
   --bg-surface: var(--color-pink-100);
@@ -48,10 +69,14 @@
   --shadow-pixel: 4px 4px 0 var(--color-plum-900);
   --shadow-pixel-sm: 2px 2px 0 var(--color-plum-900);
   --border-width: 2px;
-  --window-frame: var(--color-plum-900);      /* darker shadow */
-  --button-shadow: var(--color-pink-400);     /* medium shadow */
-  --button-face: var(--color-pink-300);       /* main color */
-  --button-highlight: var(--color-pink-50);   /* rimlight */
+  --window-frame: var(--color-plum-900);
+  /* darker shadow */
+  --button-shadow: var(--color-pink-400);
+  /* medium shadow */
+  --button-face: var(--color-pink-300);
+  /* main color */
+  --button-highlight: var(--color-pink-50);
+  /* rimlight */
 
   --border-raised-outer: inset -1px -1px var(--window-frame), inset 1px 1px var(--button-highlight);
   --border-raised-inner: inset -2px -2px var(--button-shadow), inset 2px 2px var(--button-face);

@@ -1,0 +1,22 @@
+.horizontalRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.button {
+    width: 2.5rem;
+    height: 2.5rem;
+    --control-btn-icon-size: 1.5rem;
+}
+
+.resetButton {
+    width: 100%;
+    height: 2.5rem;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: stretch;
+}

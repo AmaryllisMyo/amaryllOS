@@ -6,6 +6,7 @@ import './styles/tokens.css'
 import App from './App.tsx'
 import { LocaleProvider } from './locales/LocaleContext.tsx'
 
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <LocaleProvider>

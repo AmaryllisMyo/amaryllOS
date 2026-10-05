@@ -25,10 +25,14 @@
   box-shadow: var(--border-raised-outer), var(--border-raised-inner);
 }
 
+.controlBtn[aria-pressed="true"] {
+  box-shadow: var(--border-sunken-outer), var(--border-sunken-inner);
+}
+
  
 .iconSvg {
-  width: 13px;
-  height: 13px;
+  width: var(--control-btn-icon-size, 0.8rem);
+  height: var(--control-btn-icon-size, 0.8rem);
   display: block;
 }
  

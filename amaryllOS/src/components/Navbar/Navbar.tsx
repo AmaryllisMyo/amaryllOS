@@ -4,6 +4,7 @@ import CloseDeactivated from "../../assets/icons/CloseDeactivated.svg?react"
 import MinimizeDeactivated from "../../assets/icons/MinimizeDeactivated.svg?react"
 import MaximizeDeactivated from "../../assets/icons/MaximizeDeactivated.svg?react"
 import { useTranslation } from "../../hooks/useTranslation";
+import AmaryllOS from "../../assets/icons/AmaryllOS.svg?react"
 
 export function Navbar() {
 
@@ -12,6 +13,7 @@ export function Navbar() {
     return (
         <header className={styles.titlebar}>
             <div className={styles.buttons}>
+                <AmaryllOS style={{height: "3rem", width: "3rem"}}/>
                 <button className={styles.button}>
                     <a href="#aboutMe" className={styles.link}>
                         <h4>{t.nav.home}</h4>

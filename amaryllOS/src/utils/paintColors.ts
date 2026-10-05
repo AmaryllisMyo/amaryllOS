@@ -1,0 +1,1 @@
+export const PAINT_COLORS = Array.from({ length: 18 }, (_, i) => `var(--paint-${i+1})`);

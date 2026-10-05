@@ -80,12 +80,12 @@
 
 @keyframes bunnyBounceFlipped {
     0%, 100% { transform: scaleX(-1) translateY(0) rotate(0deg); }
-    50% { transform: scaleX(-1) translateY(-6px) rotate(8deg); }
+    50% { transform: scaleX(-1) translateY(6px) rotate(-8deg); }
 }
 
 @keyframes bunnyBounce {
     0%, 100% { transform: translateY(0) rotate(0deg); }
-    50% { transform: translateY(-6px) rotate(8deg); }
+    50% { transform: translateY(6px) rotate(-8deg); }
 }
 
 .skills1 {
@@ -105,4 +105,8 @@
 .projects {
     height: 400px;
     overflow-y: auto
+}
+
+.paint {
+    --window-body-custom-bg: var(--color-pink-300);
 }

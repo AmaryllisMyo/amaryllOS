@@ -7,10 +7,10 @@
   background: var(--titlebar-bg-gradient);
   color: var(--titlebar-text);
   font-family: var(--font-pixel);
-  font-size: var(--fs-window-title);
-  position: fixed;
+  font-size: medium;
   left: 0;
   right: 0;
   bottom: 0;
-  height: 25px;
+  height: 40px;
+  width: 100%;
 }
