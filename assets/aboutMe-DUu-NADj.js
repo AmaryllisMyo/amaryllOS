@@ -1,0 +1,8 @@
+import{t as e}from"./index-Btqn1PeH.js";var t=e();function n(e){let n={a:`a`,h2:`h2`,h3:`h3`,p:`p`,strong:`strong`,...e.components};return(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(n.h2,{children:`Ciao!`}),`
+`,(0,t.jsx)(n.h3,{children:`Sono Amaryllis <3`}),`
+`,(0,t.jsxs)(n.p,{children:[`Sono uno Sviluppatore Frontend che lavora con `,(0,t.jsx)(n.strong,{children:`Angular`}),` and `,(0,t.jsx)(n.strong,{children:`React`}),`, con esperienza nel costruire esperienze web user-centriche; mi piace creare del software intuitivo e responsivo, sempre tenendo a mente l'accessibilità.
+Prima di spostarmi sul Web Development, ho trascorso più di due anni lavorando come Game Developer ricoprendo ruoli di UI Artist, UX Designer e Technical Artist, ed ho imparato Unity e Unreal Engine.
+Questa esperienza multidisciplinare mi ha permesso di diventare uno Sviluppatore versatile con solide fondamenta di design e di arte, che sa `,(0,t.jsx)(n.strong,{children:`trasformare mockup in interfacce polishate`}),` e `,(0,t.jsx)(n.strong,{children:`prototipare idee rapidamente`}),`.`]}),`
+`,(0,t.jsx)(n.p,{children:`------------`}),`
+`,(0,t.jsx)(n.h3,{children:`CONTATTAMI!!!`}),`
+`,(0,t.jsx)(n.p,{children:(0,t.jsx)(n.a,{href:`mailto:am.cancellara@proton.me`,children:`am.cancellara@proton.me`})})]})}function r(e={}){let{wrapper:r}=e.components||{};return r?(0,t.jsx)(r,{...e,children:(0,t.jsx)(n,{...e})}):n(e)}export{r as default};
