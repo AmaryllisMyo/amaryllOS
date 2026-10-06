@@ -1,0 +1,112 @@
+.pageColumn {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-8);
+}
+
+.rowDiv {
+    width: 100%;
+    display: flex;
+    gap: var(--space-4);
+    align-items: flex-start;
+}
+
+.columnDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-4);
+    flex: 43 1 0;
+    min-width: 260px;
+}
+
+
+.windowSmall {
+    width: 100%;
+}
+
+.windowBig {
+    flex: 57 1 0;
+    min-width: 0;
+}
+
+.windowMedium {
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+.imgPlaceholder {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.button {
+    flex: 1 1 auto;
+    max-width: 250px;
+    min-height: 60px;
+    font-size: var(--fs-btns);
+    font-weight: bold;
+}
+
+.bunnyIcon {
+    width: 40px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    flex-shrink: 0;
+}
+
+.bunnyIconFlipped {
+    transform: scaleX(-1);
+}
+
+.buttonRow {
+    display: flex;
+    width: 100%;
+    gap: var(--space-4);
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonRow:hover .bunnyIcon {
+    animation: bunnyBounce 0.5s ease-in-out infinite;
+}
+
+.buttonRow:hover .bunnyIcon.bunnyIconFlipped {
+    animation-name: bunnyBounceFlipped;
+}
+
+@keyframes bunnyBounceFlipped {
+    0%, 100% { transform: scaleX(-1) translateY(0) rotate(0deg); }
+    50% { transform: scaleX(-1) translateY(6px) rotate(-8deg); }
+}
+
+@keyframes bunnyBounce {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(6px) rotate(-8deg); }
+}
+
+.skills1 {
+    padding: 0 !important;
+    margin: 0 !important; 
+}
+
+.skills2 {
+    text-align: center !important;
+}
+
+.skills3 {
+    text-align: right !important;
+
+}
+
+.projects {
+    height: 400px;
+    overflow-y: auto
+}
+
+.paint {
+    --window-body-custom-bg: var(--color-pink-300);
+}

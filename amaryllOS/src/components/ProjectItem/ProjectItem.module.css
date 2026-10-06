@@ -1,0 +1,35 @@
+.body {
+    background-color: white;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    text-align: left;
+    padding: 20px;
+}
+
+.children {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.children img,
+.children > * {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    background-color: var(--color-baby-blue);
+}
+
+.title {
+    font-size: var(--fs-heading-2);
+    font-weight: bold;
+}
+
+.description {
+    font-size: var(--fs-body);
+    
+}

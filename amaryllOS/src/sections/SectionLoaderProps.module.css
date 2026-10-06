@@ -1,0 +1,15 @@
+.root {
+  padding: var(--space-4) var(--space-2);
+  text-align: left;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+h3 {
+  margin: 0.5em 0;
+}

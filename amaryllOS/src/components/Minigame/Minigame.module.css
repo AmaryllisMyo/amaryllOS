@@ -1,0 +1,58 @@
+.sprite {
+    background-image: url("../../assets/images/Sbrills.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 400px;
+    width: 500px;
+    background-origin: content-box;
+    transform: scaleX(-1);
+}
+
+.body {
+    background-color: var(--bg-page);
+    background-image: linear-gradient(color-mix(in srgb, var(--bg-page) 30%, transparent) 0 0), var(--bg-page-image);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: var(--space-4);
+    
+}
+
+.rowDiv {
+    display: flex;
+    gap: var(--space-4);
+    align-items: center;
+}
+
+.button {
+    flex: 1 1 auto;
+    width: 100px;
+    height: 50px;
+    font-size: medium
+}
+
+.skills ul {
+    list-style: disc;
+    display: grid;
+    gap: 1rem;
+    margin-left: 0.5rem;
+    font-weight: 1000;
+    font-size: larger;
+    color:var(--color-plum-900);
+    -webkit-text-stroke: 8px var(--color-pink-100);    
+    text-shadow: 6px 6px 0px var(--shadow-color);
+    paint-order: stroke fill;
+    animation: listAnimation 0.1s linear;
+}
+
+@keyframes listAnimation {
+    from {
+        transform: translateX(-20%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,129 @@
+:root {
+  --color-pink-50: #FFDDE7;
+  --color-pink-100: #FFCDDC;
+  --color-pink-200: #FFA5E0;
+  --color-pink-300: #F277C7;
+  --color-pink-400: #C34296;
+  --color-plum-900: #3F0A2C;
+  --color-indigo: #1F26A5;
+  --color-cyan: #27CAEE;
+  --color-blue: #1671E9;
+  --color-baby-blue: #E1F8FF;
+
+  --shadow-color: #1671e946;
+
+  --paint-1: #fd9b9b;
+  --paint-2: #facb92;
+  --paint-3: #adf89e;
+  --paint-4: #f9fc9d;
+  --paint-5: #86edf7;
+  --paint-6: #86b3fc;
+  --paint-7: #ae9fff;
+  --paint-8: #ffa3ff;
+  --paint-9: #000000;
+  --paint-10: #002466;
+  --paint-11: #f992ad;
+  --paint-12: #916dd5;
+  --paint-13: #e4cab9;
+  --paint-14: #0077b6;
+  --paint-15: #00b4d8;
+  --paint-16: #74c69d;
+  --paint-17: #a98365;
+  --paint-18: #6a3f24;
+
+  --bg-page: var(--color-baby-blue);
+  --bg-surface: var(--color-pink-100);
+  --bg-surface-strong: var(--color-pink-200);
+  --border-window: var(--color-plum-900);
+  --border-window-soft: var(--color-pink-400);
+  --titlebar-bg: var(--color-indigo);
+  --titlebar-bg-gradient: linear-gradient(90deg, var(--color-indigo), var(--color-blue));
+  --titlebar-text: #FFFFFF;
+  --text-primary: var(--color-plum-900);
+  --text-onaccent: #FFFFFF;
+  --accent: var(--color-pink-300);
+  --accent-strong: var(--color-pink-400);
+  --link: var(--color-blue);
+  --focus-ring: var(--color-cyan);
+  --disabled-bg: var(--color-pink-100);
+  --disabled-text: #C99BB4;
+
+  --bg-page-image: url("../assets/images/CloudsBG.png");
+
+  --font-pixel: "Pixelify Sans", monospace;
+  --font-body: "Pixelify Sans", monospace;
+  --fs-window-title: 1.1rem;
+  --fs-heading: 2rem;
+  --fs-heading-2: 1.75rem;
+
+  --fs-btns: 1.25rem;
+  --fs-btns-2: 1.35rem;
+  --fs-btns-3: 1.5rem;
+  
+  --fs-body: 1.1rem;
+  --fs-body-2: 1.25rem;
+  --fs-body-3: 1.3rem;
+
+  --fs-base: var(--fs-body);
+  --fs-btn-base: var(--fs-btns);
+
+  --fs-small: 0.75rem;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-8: 64px;
+  --shadow-pixel: 4px 4px 0 var(--color-plum-900);
+  --shadow-pixel-sm: 2px 2px 0 var(--color-plum-900);
+  --border-width: 2px;
+  --window-frame: var(--color-plum-900);
+  /* darker shadow */
+  --button-shadow: var(--color-pink-400);
+  /* medium shadow */
+  --button-face: var(--color-pink-300);
+  /* main color */
+  --button-highlight: var(--color-pink-50);
+  /* rimlight */
+
+  --border-raised-outer: inset -1px -1px var(--window-frame), inset 1px 1px var(--button-highlight);
+  --border-raised-inner: inset -2px -2px var(--button-shadow), inset 2px 2px var(--button-face);
+  --border-sunken-outer: inset -1px -1px var(--button-highlight), inset 1px 1px var(--window-frame);
+  --border-sunken-inner: inset -2px -2px var(--button-face), inset 2px 2px var(--button-shadow);
+
+  --default-button-border-raised-outer: inset -2px -2px var(--window-frame), inset 1px 1px var(--window-frame);
+  --default-button-border-raised-inner: inset 2px 2px var(--button-highlight), inset -3px -3px var(--button-shadow), inset 3px 3px var(--button-face);
+  --default-button-border-sunken-outer: inset 2px 2px var(--window-frame), inset -1px -1px var(--window-frame);
+  --default-button-border-sunken-inner: inset -2px -2px var(--button-highlight), inset 3px 3px var(--button-shadow), inset -3px -3px var(--button-face);
+  --border-window-outer: inset -1px -1px var(--window-inner-light), inset 1px 1px var(--window-inner-light);
+  --border-window-inner: inset -2px -2px var(--window-inner-dark), inset 2px 2px var(--window-inner-dark);
+  --window-b: 1px;
+  --window-content: var(--color-pink-300);
+  --window-body-bg: var(--color-pink-100);
+  --window-outer-light: var(--color-pink-200);
+  --window-outer-dark: var(--color-plum-900);
+  --window-inner-light: var(--color-pink-50);
+  --window-inner-dark: var(--color-pink-400);
+  --border-field: inset -1px -1px var(--button-highlight), inset 1px 1px var(--button-shadow), inset -2px -2px var(--button-face), inset 2px 2px var(--window-frame);
+  --border-status-field: inset -1px -1px var(--button-face), inset 1px 1px var(--button-shadow);
+  --border-tab: inset -1px 0 var(--window-frame), inset 1px 1px var(--button-face), inset -2px 0 var(--button-shadow), inset 2px 2px var(--button-highlight);
+}
+
+* {
+  box-sizing: border-box;
+  image-rendering: pixelated;
+}
+
+body {
+  background-color: var(--bg-page);
+  background-image: var(--bg-page-image);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: var(--fs-base);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
