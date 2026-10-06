@@ -66,6 +66,11 @@ export function LandingPage() {
         </Window>
       </section>
 
+      <section id="readme">
+        <Window title="README.md">
+          <SectionLoader sections={["readme"]}/>
+        </Window>
+      </section>
     </div>
   );
 }

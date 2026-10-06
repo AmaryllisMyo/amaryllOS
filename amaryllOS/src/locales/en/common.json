@@ -1,4 +1,4 @@
 {
-  "nav": { "home": "About Me", "skills": "Skills", "projects": "Projects", "doodle": "Leave me a doodle!" },
+  "nav": { "home": "About Me", "skills": "Skills", "projects": "Projects", "doodle": "Leave me a doodle!", "readme": "README.md" },
   "hero": { "title": "Welcome" }
 }

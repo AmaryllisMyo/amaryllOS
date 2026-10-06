@@ -42,6 +42,12 @@ export function Navbar() {
                         <h4>{t.nav.doodle}</h4>
                     </a>
                 </button>
+
+                <button className={styles.button}>
+                    <a className={styles.link} href="#readme">
+                        <h4>{t.nav.readme}</h4>
+                    </a>
+                </button>
             </div>
 
 

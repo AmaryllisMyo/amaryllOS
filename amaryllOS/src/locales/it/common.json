@@ -1,4 +1,4 @@
 {
-  "nav": { "home": "Su di me", "skills": "Skills", "projects": "Progetti", "doodle": "Lasciami un disegno!" },
+  "nav": { "home": "Su di me", "skills": "Skills", "projects": "Progetti", "doodle": "Lasciami un disegno!", "readme": "README.md" },
   "hero": { "title": "Welcome" }
 }

@@ -22,35 +22,35 @@ const miniComponents = {
 };
 
 export function Minigame() {
-   
-   const { i18n } = useTranslation();
+
+    const { i18n } = useTranslation();
     const [section, setSection] = useState<Section>("frontend");
 
-    
+
     return (
 
 
-    <div className={styles.body}>
+        <div className={styles.body}>
 
-        <div className={styles.rowDiv}>
-            <ControlButton className={styles.button}
-                text="Frontend Developer"
-                pressed={section === "frontend"}
-                onClick={() => setSection("frontend")} />
-            <ControlButton className={styles.button}
+            <div className={styles.rowDiv}>
+                <ControlButton className={styles.button}
+                    text="Frontend Developer"
+                    pressed={section === "frontend"}
+                    onClick={() => setSection("frontend")} />
+                <ControlButton className={styles.button}
                     text="UI/UX Designer"
                     pressed={section === "ux"}
                     onClick={() => setSection("ux")} />
-        </div>
-
-        <div className={styles.rowDiv}>
-            <div>
-                <MDXProvider components={miniComponents}>
-                    <SectionLoader sections={[FILES[section]]} className={styles.skills} />
-                </MDXProvider>
             </div>
-            <div className={styles.sprite} />
+
+            <div className={styles.rowDiv}>
+                <div>
+                    <MDXProvider components={miniComponents}>
+                        <SectionLoader sections={[FILES[section]]} className={styles.skills} />
+                    </MDXProvider>
+                </div>
+                <div className={styles.sprite} />
+            </div>
         </div>
-    </div>
     );
 }
