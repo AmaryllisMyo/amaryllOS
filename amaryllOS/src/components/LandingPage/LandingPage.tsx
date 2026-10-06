@@ -4,7 +4,7 @@ import { ControlButton } from "../ControlButton/ControlButton";
 import BunnyIcon from "../../assets/icons/BunnyIcon.png"
 import { Minigame } from "../Minigame/Minigame";
 import { SectionLoader } from "../../sections/sectionLoaderProps";
-import { ExplorerIcon } from "assets/icons/ExplorerIcon/ExplorerIcon";
+import { ExplorerIcon } from "./../../assets/icons/ExplorerIcon/ExplorerIcon";
 import { ProjectItem } from "../ProjectItem/ProjectItem";
 import LittleRepair from "../../assets/images/LittleRepair.png"
 import TaskBun from "../../assets/images/TaskBun.jpg"

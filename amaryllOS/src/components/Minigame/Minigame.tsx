@@ -1,6 +1,5 @@
 import { useState } from "react";
 import type { CSSProperties, ReactNode } from "react";
-import { useTranslation } from "react-i18next";
 import { MDXProvider } from "@mdx-js/react";
 import styles from "./Minigame.module.css";
 import { ControlButton } from "../ControlButton/ControlButton";
@@ -23,7 +22,6 @@ const miniComponents = {
 
 export function Minigame() {
 
-    const { i18n } = useTranslation();
     const [section, setSection] = useState<Section>("frontend");
 
 

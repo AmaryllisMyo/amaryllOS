@@ -2,7 +2,7 @@ import { ControlButton } from "./../ControlButton/ControlButton";
 import Pencil from "../../assets/icons/Pencil.svg?react"
 import Eraser from "../../assets/icons/Eraser.svg?react"
 import styles from "./PaintToolsBar.module.css"
-import type {Tool} from "components/DrawArea/DrawArea";
+import type {Tool} from "./../../components/DrawArea/DrawArea";
 
 type Props = {
     tool: Tool;

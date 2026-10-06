@@ -20,7 +20,7 @@ export type LangSwitcherProps = {
 }
 
 
-export const LangSwitcherBTN = ({ lang, text, label, onClick, className }: LangSwitcherProps) => {
+export const LangSwitcherBTN = ({ lang, text, label, onClick }: LangSwitcherProps) => {
     return (
        <ControlButton
             text={text}

@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import * as Immutable from 'immutable';
-import type { MouseEvent } from "react";
+import type { MouseEvent as ReactMouseEvent } from "react";
 import { Drawing } from "./Drawing/Drawing";
 import styles from './DrawArea.module.css'
 import { PaintToolsBar } from "./../PaintToolsBar/PaintToolsBar";
@@ -8,7 +8,7 @@ import { PaintBucketBar } from "./../PaintBucketBar/PaintBucketBar";
 import { ControlButton } from "./../ControlButton/ControlButton";
 import { PAINT_COLORS } from "./../../utils/paintColors";
 import { eraseAtPoint } from "./Drawing/Eraser/Eraser";
-import { LoadingIcon } from "assets/icons/LoadingIcon/LoadingIcon";
+import { LoadingIcon } from "./../../assets/icons/LoadingIcon/LoadingIcon";
 import emailjs from "@emailjs/browser";
 
 export type Point = Immutable.Map<string, number>;
@@ -24,17 +24,18 @@ export const DrawArea = () => {
 
     const MAX_BYTES = 45 * 1024;
 
-    const drawAreaRef = useRef(null);
+    const drawAreaRef = useRef<HTMLDivElement>(null);
 
-    const relativeCoordinatesForEvent = (mouseEvent: MouseEvent) => {
-        const boundingRect = drawAreaRef.current.getBoundingClientRect();
+    const relativeCoordinatesForEvent = (e: { clientX: number; clientY: number }) => {
+        const rect = drawAreaRef.current?.getBoundingClientRect();
+        if (!rect) return { x: 0, y: 0 };
         return {
-            x: mouseEvent.clientX - boundingRect.left,
-            y: mouseEvent.clientY - boundingRect.top,
+            x: e.clientX - rect.left,
+            y: e.clientY - rect.top,
         };
     };
 
-    const handleMouseDown = (mouseEvent: MouseEvent) => {
+    const handleMouseDown = (mouseEvent: ReactMouseEvent) => {
         if (mouseEvent.button !== 0) {
             return;
         }
@@ -51,7 +52,7 @@ export const DrawArea = () => {
         setIsDrawing(true);
     }
 
-    const handleMouseMove = (mouseEvent) => {
+    const handleMouseMove = (mouseEvent: MouseEvent) => {
         if (!isDrawing) {
             return;
         }
@@ -62,14 +63,15 @@ export const DrawArea = () => {
             setLines((prevLines) => eraseAtPoint(prevLines, coords));
         } else {
             const point = Immutable.Map(coords);
-            setLines((prevLines) => prevLines.update(prevLines.size - 1, (line: Line) => ({
-                ...line,
-                points: line.points.push(point),
-            })));
+            setLines((prevLines) =>
+                prevLines.update(prevLines.size - 1, (line) =>
+                    line ? { ...line, points: line.points.push(point) } : line
+                )
+            );
         }
     };
 
-    const handleMouseUp = (mouseEvent) => {
+    const handleMouseUp = (mouseEvent: MouseEvent) => {
         if (!isDrawing) {
             return;
         }
@@ -77,10 +79,11 @@ export const DrawArea = () => {
         if (tool !== "eraser") {
             const coords = relativeCoordinatesForEvent(mouseEvent);
             const point = Immutable.Map(coords);
-            setLines((prevLines) => prevLines.update(prevLines.size - 1, (line: Line) => ({
-                ...line,
-                points: line.points.push(point),
-            })));
+            setLines((prevLines) =>
+                prevLines.update(prevLines.size - 1, (line) =>
+                    line ? { ...line, points: line.points.push(point) } : line
+                )
+            );
         }
 
         setIsDrawing(false);
@@ -193,7 +196,7 @@ export const DrawArea = () => {
             </div>
             <div className={styles.rowDiv}>
                 <PaintBucketBar colors={PAINT_COLORS} color={color} onColorChange={setColor} onColorPick={() => setTool("pencil")} />
-                <ControlButton className={styles.button} text={isSending ? "" : "Send!"} Icon = {isSending ? LoadingIcon : null } label="send-doodle" onClick={handleSend} disabled={isSending} />
+                <ControlButton className={styles.button} text={isSending ? "" : "Send!"} Icon={isSending ? LoadingIcon : undefined} label="send-doodle" onClick={handleSend} disabled={isSending} />
             </div>
         </div>
     );

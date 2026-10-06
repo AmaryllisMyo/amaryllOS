@@ -1,8 +1,9 @@
 import { Navbar } from "../Navbar/Navbar";
 import { Footer } from "../Footer/Footer";
 import styles from "./Layout.module.css"
+import type { ReactNode } from "react";
 
-export function Layout({ children }) {
+export function Layout({ children }: {children: ReactNode}) {
     return (
         <>
             <div className={styles.page}>
