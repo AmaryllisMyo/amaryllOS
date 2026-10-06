@@ -1,14 +1,14 @@
-import { Window } from "./Windows/Windows";
+import { Window } from "../Windows/Windows";
 import styles from "./LandingPage.module.css"
-import { ControlButton } from "./ControlButton/ControlButton";
-import BunnyIcon from "../assets/icons/BunnyIcon.png"
-import { Minigame } from "./Minigame/Minigame";
-import { SectionLoader } from "../sections/sectionLoaderProps";
+import { ControlButton } from "../ControlButton/ControlButton";
+import BunnyIcon from "../../assets/icons/BunnyIcon.png"
+import { Minigame } from "../Minigame/Minigame";
+import { SectionLoader } from "../../sections/sectionLoaderProps";
 import { ExplorerIcon } from "assets/icons/ExplorerIcon/ExplorerIcon";
-import { ProjectItem } from "./ProjectItem/ProjectItem";
-import LittleRepair from "../assets/images/LittleRepair.png"
-import TaskBun from "../assets/images/TaskBun.jpg"
-import { DrawArea } from "./DrawArea/DrawArea";
+import { ProjectItem } from "../ProjectItem/ProjectItem";
+import LittleRepair from "../../assets/images/LittleRepair.png"
+import TaskBun from "../../assets/images/TaskBun.jpg"
+import { DrawArea } from "../DrawArea/DrawArea";
 
 
 export function LandingPage() {
@@ -50,11 +50,11 @@ export function LandingPage() {
 
       <section id="projects">
         <Window Icon={ExplorerIcon} title="Some-Projects - amaryllOS Explorer">
-          <ProjectItem title="Little Repair Shop" description={<SectionLoader sections={["projectdescription_1"]} />}>
+          <ProjectItem title="Little Repair Shop" href="https://amaryllismyo.itch.io/little-repair-shop" description={<SectionLoader sections={["projectdescription_1"]} />}>
             <img src={LittleRepair} />
           </ProjectItem>
 
-          <ProjectItem title="TaskBun" description={<SectionLoader sections={["projectdescription_2"]} />}>
+          <ProjectItem title="TaskBun" href="https://drive.proton.me/urls/HT5V7NYM88#f0T80xF9nc7b" description={<SectionLoader sections={["projectdescription_2"]} />}>
             <img src={TaskBun} />
           </ProjectItem>
         </Window>

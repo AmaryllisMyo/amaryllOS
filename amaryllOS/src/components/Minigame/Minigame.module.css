@@ -3,8 +3,8 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    height: 300px;
-    width: 400px;
+    height: 400px;
+    width: 500px;
     background-origin: content-box;
     transform: scaleX(-1);
 }
@@ -37,6 +37,22 @@
     display: grid;
     gap: 1rem;
     margin-left: 0.5rem;
-    font-weight: bold;
+    font-weight: 1000;
     font-size: larger;
+    color:var(--color-plum-900);
+    -webkit-text-stroke: 8px var(--color-pink-100);    
+    text-shadow: 6px 6px 0px var(--shadow-color);
+    paint-order: stroke fill;
+    animation: listAnimation 0.1s linear;
+}
+
+@keyframes listAnimation {
+    from {
+        transform: translateX(-20%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }

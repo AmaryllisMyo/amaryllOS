@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { useLocale } from '../locales/LocaleContext';
+import { useTranslation as useI18n } from 'react-i18next';
 
 const localeModules = import.meta.glob<{ default: Record<string, any> }>(
   '../locales/*/*.json',
@@ -7,8 +7,9 @@ const localeModules = import.meta.glob<{ default: Record<string, any> }>(
 );
 
 function getNamespace(namespace: string, lang: string) {
-  const path = `../locales/${lang}/${namespace}.json`;
-  const mod = localeModules[path];
+  const mod =
+    localeModules[`../locales/${lang}/${namespace}.json`] ??
+    localeModules[`../locales/en/${namespace}.json`];
 
   if (!mod) {
     throw new Error(`Namespace ${namespace} not found for language ${lang}`);
@@ -18,6 +19,8 @@ function getNamespace(namespace: string, lang: string) {
 }
 
 export function useTranslation(namespace: string) {
-  const { lang } = useLocale();
+  const { i18n } = useI18n(); 
+  const lang = (i18n.resolvedLanguage ?? i18n.language ?? 'en').split('-')[0];
+
   return useMemo(() => getNamespace(namespace, lang), [namespace, lang]);
 }

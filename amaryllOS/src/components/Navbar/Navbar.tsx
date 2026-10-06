@@ -5,10 +5,15 @@ import MinimizeDeactivated from "../../assets/icons/MinimizeDeactivated.svg?reac
 import MaximizeDeactivated from "../../assets/icons/MaximizeDeactivated.svg?react"
 import { useTranslation } from "../../hooks/useTranslation";
 import AmaryllOS from "../../assets/icons/AmaryllOS.svg?react"
+import { LanguageSwitcher } from "../../components/LangSwitcher";
+import { useFontSize } from "../../hooks/useFontSize";
+import { FontSizeSwitcherBTN } from "../FontSizePicker/FontSizeSwitcherBTN";
+
 
 export function Navbar() {
 
     const t = useTranslation('common');
+    const { current, next, cycle } = useFontSize();
 
     return (
         <header className={styles.titlebar}>
@@ -40,10 +45,14 @@ export function Navbar() {
             </div>
 
 
-            <div className={styles.controls}>
+            <div className={styles.switcher}>
+                <LanguageSwitcher/>
+                <FontSizeSwitcherBTN onClick={cycle} text={current.label} label={`current size: ${current.label}. Press to go to ${next.label}`}/>
+                <div className={styles.controls}>
                 <ControlButton Icon={MinimizeDeactivated} disabled={true} />
                 <ControlButton Icon={MaximizeDeactivated} disabled={true} />
                 <ControlButton Icon={CloseDeactivated} disabled={true} />
+            </div>
             </div>
         </header>
     );
