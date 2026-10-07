@@ -1,4 +1,4 @@
-import{t as e}from"./index-DJcWaGz3.js";var t=e();function n(e){let n={li:`li`,ul:`ul`,...e.components};return(0,t.jsxs)(n.ul,{children:[`
+import{t as e}from"./index-Cx62nX4u.js";var t=e();function n(e){let n={li:`li`,ul:`ul`,...e.components};return(0,t.jsxs)(n.ul,{children:[`
 `,(0,t.jsx)(n.li,{children:`Figma`}),`
 `,(0,t.jsx)(n.li,{children:`Wireframing to prototyping`}),`
 `,(0,t.jsx)(n.li,{children:`UI Animation and User Feedback`}),`

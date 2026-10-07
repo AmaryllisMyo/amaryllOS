@@ -1,4 +1,4 @@
-import{t as e}from"./index-DJcWaGz3.js";var t=e();function n(e){let n={h3:`h3`,li:`li`,p:`p`,ul:`ul`,...e.components};return(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(n.h3,{children:`Sviluppo di videogiochi e Interactive Media`}),`
+import{t as e}from"./index-Cx62nX4u.js";var t=e();function n(e){let n={h3:`h3`,li:`li`,p:`p`,ul:`ul`,...e.components};return(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(n.h3,{children:`Sviluppo di videogiochi e Interactive Media`}),`
 `,(0,t.jsx)(n.p,{children:`---`}),`
 `,(0,t.jsxs)(n.ul,{children:[`
 `,(0,t.jsx)(n.li,{children:`Unity`}),`

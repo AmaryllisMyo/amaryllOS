@@ -1,4 +1,4 @@
-import{t as e}from"./index-DJcWaGz3.js";var t=e();function n(e){let n={a:`a`,h2:`h2`,h3:`h3`,p:`p`,strong:`strong`,...e.components};return(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(n.h2,{children:`Ciao!`}),`
+import{t as e}from"./index-Cx62nX4u.js";var t=e();function n(e){let n={a:`a`,h2:`h2`,h3:`h3`,p:`p`,strong:`strong`,...e.components};return(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(n.h2,{children:`Ciao!`}),`
 `,(0,t.jsx)(n.h3,{children:`Sono Amaryllis <3`}),`
 `,(0,t.jsxs)(n.p,{children:[`Sono uno Sviluppatore Frontend che lavora con `,(0,t.jsx)(n.strong,{children:`Angular`}),` and `,(0,t.jsx)(n.strong,{children:`React`}),`, con esperienza nel costruire esperienze web user-centriche; mi piace creare del software intuitivo e responsivo, sempre tenendo a mente l'accessibilità.
 Prima di spostarmi sul Web Development, ho trascorso più di due anni lavorando come Game Developer ricoprendo ruoli di UI Artist, UX Designer e Technical Artist, ed ho imparato Unity e Unreal Engine.
