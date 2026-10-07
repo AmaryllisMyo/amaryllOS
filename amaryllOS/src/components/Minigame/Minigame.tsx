@@ -30,7 +30,7 @@ export function Minigame() {
 
         <div className={styles.body}>
 
-            <div className={styles.rowDiv}>
+            <div className={styles.buttonRow}>
                 <ControlButton className={styles.button}
                     text="Frontend Developer"
                     pressed={section === "frontend"}
@@ -41,8 +41,8 @@ export function Minigame() {
                     onClick={() => setSection("ux")} />
             </div>
 
-            <div className={styles.rowDiv}>
-                <div>
+            <div className={styles.contentRow}>
+                <div className={styles.skillsCol}>
                     <MDXProvider components={miniComponents}>
                         <SectionLoader sections={[FILES[section]]} className={styles.skills} />
                     </MDXProvider>

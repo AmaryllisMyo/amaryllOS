@@ -25,7 +25,6 @@ export function Navbar() {
 
                 <a href="#projects" className={styles.link}>{t.nav.projects}</a>
 
-
                 <a className={styles.link} href="#doodleboard">{t.nav.doodle}</a>
 
                 <a href="#readme" className={styles.link} >{t.nav.readme}</a>
