@@ -1,4 +1,4 @@
-import{t as e}from"./index-Btqn1PeH.js";var t=e();function n(e){let n={a:`a`,h2:`h2`,h3:`h3`,li:`li`,p:`p`,ul:`ul`,...e.components};return(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(n.h2,{children:`Hi!`}),`
+import{t as e}from"./index-DV0vjNM1.js";var t=e();function n(e){let n={a:`a`,h2:`h2`,h3:`h3`,li:`li`,p:`p`,ul:`ul`,...e.components};return(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(n.h2,{children:`Hi!`}),`
 `,(0,t.jsx)(n.h3,{children:`Thank you for the time spent browsing my personal website :D`}),`
 `,(0,t.jsxs)(n.p,{children:[`If you want to find out more about my design process, you can find the project at this `,(0,t.jsx)(n.a,{href:`https://www.figma.com/design/CUcdHuRECVNLBYd2KAwNws/AmaryllisSito?node-id=0-1&t=Cm6Z0zjJ5soREGiH-1`,children:`Figma link`}),`.`]}),`
 `,(0,t.jsx)(n.p,{children:`-----`}),`
