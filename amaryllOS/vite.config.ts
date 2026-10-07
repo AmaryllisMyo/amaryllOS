@@ -12,6 +12,7 @@ export default defineConfig({
       assets: fileURLToPath(new URL("./src/assets", import.meta.url)),
     }
   },
+  base: './',
   plugins: [
     { enforce: 'pre', ...mdx() },
     svgr(),

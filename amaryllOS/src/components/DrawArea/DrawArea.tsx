@@ -178,11 +178,14 @@ export const DrawArea = () => {
         });
 
     useEffect(() => {
-        document.addEventListener('mousemove', handleMouseMove);
-        document.addEventListener('mouseup', handleMouseUp);
+        document.addEventListener('pointermove', handleMouseMove);
+        document.addEventListener('pointerup', handleMouseUp);
+        document.addEventListener('pointercancel', handleMouseUp);
+
         return () => {
-            document.removeEventListener('mousemove', handleMouseMove);
-            document.removeEventListener('mouseup', handleMouseUp);
+            document.removeEventListener('pointermove', handleMouseMove);
+            document.removeEventListener('pointerup', handleMouseUp);
+            document.removeEventListener('pointercancel', handleMouseUp);
         };
     }, [isDrawing, tool, color]);
 
@@ -190,7 +193,7 @@ export const DrawArea = () => {
         <div className={styles.paintBucket}>
             <div className={styles.toolsLayout}>
                 <PaintToolsBar tool={tool} onToolChange={setTool} onReset={handleReset} />
-                <div ref={drawAreaRef} onMouseDown={handleMouseDown} className={styles.body}>
+                <div ref={drawAreaRef} onPointerDown={handleMouseDown} className={styles.body}>
                     <Drawing svgRef={svgRef} lines={lines} />
                 </div>
             </div>
