@@ -1,12 +1,15 @@
 .sprite {
+    flex: 0 1 50%;
+    min-width: 300px;
+    max-width: 400px;
+    aspect-ratio: 1 / 1;
+    image-rendering: pixelated;
     background-image: url("../../assets/images/Sbrills.gif");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    height: 400px;
-    width: 500px;
-    background-origin: content-box;
     transform: scaleX(-1);
+    margin-left: 3rem;
 }
 
 .body {
@@ -19,17 +22,30 @@
     
 }
 
-.rowDiv {
+.contentRow {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    min-width: 0;
+}
+
+.buttonRow {
     display: flex;
     gap: var(--space-4);
-    align-items: center;
 }
 
 .button {
-    flex: 1 1 auto;
-    width: 100px;
-    height: 50px;
-    font-size: medium
+    flex: 1 1 0;
+    min-width: 0;
+    white-space: normal;
+    padding: 2rem 0.75rem;
+    line-height: 1.2;
+}
+
+.skillsCol {
+    flex: 1 1 0;
+    min-width: 0;
+    padding-right: var(--space-8);
 }
 
 .skills ul {
