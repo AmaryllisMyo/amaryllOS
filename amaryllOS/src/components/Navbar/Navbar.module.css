@@ -23,8 +23,15 @@
 
 .buttons {
   display: flex;
-  gap: var(--space-6);
+  align-items: center;
+  gap: var(--space-4);
   margin-left: 10px;
+  min-width: 0;
+  flex: 1 1 auto;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none;
+  line-height: 1.2;
 }
 
 .button {
@@ -47,12 +54,51 @@
 }
 
 .link {
-    color: var(--titlebar-text);
-    text-decoration: none;
+  color: var(--titlebar-text);
+  text-decoration: none;
+  font-size: larger;
+  font-weight: bold;
+  line-height: 1.2;
+  padding: var(--space-2) 0;
+  display: inline-block;
 }
 
 .switcher {
   display: flex;
   gap: 10px;
   align-items: center;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .buttons {
+    flex: 1 1 auto;
+    margin-left: 0;
+    gap: var(--space-4);
+    overflow-x: scroll;
+    white-space: nowrap;
+    scrollbar-width: none;
+  }
+
+  .buttons::-webkit-scrollbar {
+    display: none;
+  }
+
+  .buttons > svg {
+    flex-shrink: 0;
+  }
+
+  .controls {
+    display: none;
+  }
+
+  .switcher {
+    gap: var(--space-2);
+  }
+}
+
+@media (max-width: 1024px) {
+  .controls {
+    display: none;
+  }
 }

@@ -37,7 +37,7 @@ export function LandingPage() {
       <section id="skills">
         <div className={styles.rowDiv}>
           <Window title="Skills_1.txt" className={styles.windowMedium}>
-            <SectionLoader sections={["skills_1"]} />
+            <SectionLoader sections={["skills_1"]} className={styles.skills1}/>
           </Window>
           <Window title="Skills_2.txt" className={styles.windowMedium}>
             <SectionLoader sections={["skills_3"]} className={styles.skills2} />

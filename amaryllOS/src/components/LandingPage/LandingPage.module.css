@@ -79,19 +79,29 @@
 }
 
 @keyframes bunnyBounceFlipped {
-    0%, 100% { transform: scaleX(-1) translateY(0) rotate(0deg); }
-    50% { transform: scaleX(-1) translateY(6px) rotate(-8deg); }
+
+    0%,
+    100% {
+        transform: scaleX(-1) translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: scaleX(-1) translateY(6px) rotate(-8deg);
+    }
 }
 
 @keyframes bunnyBounce {
-    0%, 100% { transform: translateY(0) rotate(0deg); }
-    50% { transform: translateY(6px) rotate(-8deg); }
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(6px) rotate(-8deg);
+    }
 }
 
-.skills1 {
-    padding: 0 !important;
-    margin: 0 !important; 
-}
 
 .skills2 {
     text-align: center !important;
@@ -103,10 +113,41 @@
 }
 
 .projects {
-    height: 400px;
     overflow-y: auto
 }
 
 .paint {
     --window-body-custom-bg: var(--color-pink-300);
+}
+
+@media (max-width: 768px) {
+    .rowDiv {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .columnDiv {
+        flex: none;
+        width: 100%;
+        min-width: 0;
+    }
+
+    .windowBig,
+    .windowMedium {
+        flex: none;
+        width: 100%;
+    }
+
+    .skills1 {
+        text-align: center !important;
+    }
+
+    .skills2 {
+        text-align: center !important;
+    }
+
+    .skills3 {
+        text-align: center !important;
+
+    }
 }

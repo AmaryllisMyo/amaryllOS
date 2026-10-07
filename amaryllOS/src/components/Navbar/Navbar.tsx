@@ -18,47 +18,28 @@ export function Navbar() {
     return (
         <header className={styles.titlebar}>
             <div className={styles.buttons}>
-                <AmaryllOS style={{height: "3rem", width: "3rem"}}/>
-                <button className={styles.button}>
-                    <a href="#aboutMe" className={styles.link}>
-                        <h4>{t.nav.home}</h4>
-                    </a>
-                </button>
+                <AmaryllOS style={{ height: "3rem", width: "3rem" }} />
+                <a href="#aboutMe" className={styles.link}>{t.nav.home}</a>
 
-                <button className={styles.button}>
-                    <a href="#skills" className={styles.link}>
-                        <h4>{t.nav.skills}</h4>
-                    </a>
-                </button>
+                <a href="#skills" className={styles.link}>{t.nav.skills}</a>
 
-                <button className={styles.button}>
-                    <a href="#projects" className={styles.link}>
-                        <h4>{t.nav.projects}</h4>
-                    </a>
-                </button>
+                <a href="#projects" className={styles.link}>{t.nav.projects}</a>
 
-                <button className={styles.button}>
-                    <a className={styles.link} href="#doodleboard">
-                        <h4>{t.nav.doodle}</h4>
-                    </a>
-                </button>
 
-                <button className={styles.button}>
-                    <a className={styles.link} href="#readme">
-                        <h4>{t.nav.readme}</h4>
-                    </a>
-                </button>
+                <a className={styles.link} href="#doodleboard">{t.nav.doodle}</a>
+
+                <a href="#readme" className={styles.link} >{t.nav.readme}</a>
             </div>
 
 
             <div className={styles.switcher}>
-                <LanguageSwitcher/>
-                <FontSizeSwitcherBTN onClick={cycle} text={current.label} label={`current size: ${current.label}. Press to go to ${next.label}`}/>
+                <LanguageSwitcher />
+                <FontSizeSwitcherBTN onClick={cycle} text={current.label} label={`current size: ${current.label}. Press to go to ${next.label}`} />
                 <div className={styles.controls}>
-                <ControlButton Icon={MinimizeDeactivated} disabled={true} />
-                <ControlButton Icon={MaximizeDeactivated} disabled={true} />
-                <ControlButton Icon={CloseDeactivated} disabled={true} />
-            </div>
+                    <ControlButton Icon={MinimizeDeactivated} disabled={true} />
+                    <ControlButton Icon={MaximizeDeactivated} disabled={true} />
+                    <ControlButton Icon={CloseDeactivated} disabled={true} />
+                </div>
             </div>
         </header>
     );
